@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R. Haque - QA Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- grain / texture overlay -->
+<div class="grain"></div>
+
+<!-- ============ SIDEBAR ============ -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <div class="ticket-id">QA-PORTFOLIO</div>
+    <h1 class="sidebar-name">Reefah<br>Tasnia Haque</h1>
+    <p class="sidebar-role">QA Engineer <span class="dot">·</span> Manual Testing</p>
+  </div>
+
+  <ul class="sidebar-nav">
+    <li><a href="#hero" class="nav-link active" data-target="hero"><span class="nav-num">00</span>Overview</a></li>
+    <li><a href="#story" class="nav-link" data-target="story"><span class="nav-num">01</span>The Program</a></li>
+    <li><a href="#strategy" class="nav-link" data-target="strategy"><span class="nav-num">02</span>My Strategy</a></li>
+    <li><a href="#cases" class="nav-link" data-target="cases"><span class="nav-num">03</span>Case Files</a></li>
+    <li><a href="#toolkit" class="nav-link" data-target="toolkit"><span class="nav-num">04</span>Toolkit</a></li>
+    <li><a href="#contact" class="nav-link" data-target="contact"><span class="nav-num">05</span>Contact</a></li>
+  </ul>
+
+  <div class="sidebar-bottom">
+    <div class="status-chip">
+      <span class="status-dot"></span>
+      Open to QA roles
+    </div>
+  </div>
+</nav>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+  <span></span><span></span><span></span>
+</button>
+
+<!-- ============ MAIN ============ -->
+<main class="main">
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="section hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Bug Report <span class="eyebrow-sep">/</span> Filed by Reefah</p>
+        <h2 class="hero-title">I read the<br>specification<br><span class="hero-title-accent">before</span> I touch<br>the application.</h2>
+        <p class="hero-sub">A practical record of manual functional and GUI testing skills, built around real defect reports and real test documentation from a hands-on QA training program.</p>
+        <div class="hero-actions">
+          <a href="#cases" class="btn btn-primary">View Case Files</a>
+          <a href="#strategy" class="btn btn-ghost">See My Strategy</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="mock-window">
+          <div class="mock-titlebar">
+            <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+            <span class="mock-url">training-env.local/menu</span>
+          </div>
+          <div class="mock-body" id="mockBody">
+            <div class="mock-card">
+              <div class="mock-card-img"></div>
+              <div class="mock-card-line w70"></div>
+              <div class="mock-card-line w40"></div>
+              <div class="mock-card-price"></div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card-img"></div>
+              <div class="mock-card-line w70"></div>
+              <div class="mock-card-line w40"></div>
+              <div class="mock-card-price"></div>
+            </div>
+            <div class="mock-card flagged">
+              <div class="mock-card-img"></div>
+              <div class="mock-card-line w70"></div>
+              <div class="mock-card-line w40"></div>
+              <div class="mock-card-price"></div>
+            </div>
+
+            <!-- annotation marker -->
+            <button class="annotation-marker" id="annoMarker" style="top:58%; left:62%;" aria-label="View defect annotation">1</button>
+          </div>
+        </div>
+        <!-- callout lives OUTSIDE the clipped mock window so it can never be cut off -->
+        <div class="annotation-callout" id="annoCallout">
+          <div class="annotation-callout-head">
+            <span class="anno-tag critical">Critical</span>
+            <span class="anno-id">Category: Content</span>
+          </div>
+          <p class="annotation-callout-title">A product's title and description didn't match each other.</p>
+          <p class="annotation-callout-body">The displayed name belonged to one item; the description text underneath it belonged to a different one entirely.</p>
+        </div>
+        <p class="mock-caption">Click the marker. This is how I leave a defect note.</p>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-count="137">0</span>
+        <span class="stat-label">Bugs Filed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="4">0</span>
+        <span class="stat-label">Applications Tested</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="2">0</span>
+        <span class="stat-label">Months of Training</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="9">0</span>
+        <span class="stat-label">Test Documents Produced</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORY / PROGRAM ===== -->
+  <section id="story" class="section story">
+    <p class="section-eyebrow">01 / The Program</p>
+    <h3 class="section-title">A training ground, not a job title.</h3>
+
+    <div class="story-body">
+      <p>I completed this training program over two months. It started with group mentorship, working through the fundamentals of manual testing alongside other trainees: finding bugs, learning to write them up properly, and understanding what actually counts as a defect.</p>
+
+      <p>That was followed by one to one mentorship with an experienced QA mentor, working through full applications and producing complete test documentation rather than just bug lists.</p>
+
+      <p>What follows isn't a certificate. It's a sanitized look at the actual work: how I approached testing, and what the defect reports and documentation looked like by the end of it.</p>
+    </div>
+
+    <div class="story-timeline">
+      <div class="timeline-item">
+        <span class="timeline-marker active"></span>
+        <div class="timeline-content">
+          <span class="timeline-label">Group Mentorship</span>
+          <p>A few weeks of foundational training alongside other trainees. Functional testing on small training applications, and learning the anatomy of a proper defect report.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-marker active"></span>
+        <div class="timeline-content">
+          <span class="timeline-label">One to One Mentorship</span>
+          <p>A few weeks of individual training with an experienced mentor. Full test documentation suites: acceptance sheets, test surveys, and quality reports, reviewed and corrected directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STRATEGY ===== -->
+  <section id="strategy" class="section strategy">
+    <p class="section-eyebrow">02 / My Strategy</p>
+    <h3 class="section-title">How I actually test something.</h3>
+    <p class="section-sub">This is the process I run for manual functional and GUI testing. Specifics below are described by category, not reproduced verbatim. This is methodology, not a copy of real defect text.</p>
+
+    <!-- process flow -->
+    <h4 class="strategy-subhead">The Pass, In Order</h4>
+    <p class="flow-intro">Six tiles, hover one to read it, or press play to walk through the whole sequence.</p>
+    <div class="flow" id="flow">
+      <div class="flow-step" data-step="1">
+        <div class="flow-step-head">
+          <span class="flow-num">01</span>
+          <h5>Read everything first</h5>
+        </div>
+        <div class="flow-desc">
+          <p>Full spec, every page, before the application is even open. This single habit prevents more missed defects than any technique that follows it.</p>
+        </div>
+      </div>
+      <div class="flow-step" data-step="2">
+        <div class="flow-step-head">
+          <span class="flow-num">02</span>
+          <h5>Decompose the app</h5>
+        </div>
+        <div class="flow-desc">
+          <p>Break it into modules by logic, by role, or by navigation. A bug is only easy to triage if it's easy to locate first.</p>
+        </div>
+      </div>
+      <div class="flow-step" data-step="3">
+        <div class="flow-step-head">
+          <span class="flow-num">03</span>
+          <h5>Pick the documentation</h5>
+        </div>
+        <div class="flow-desc">
+          <p>Match the format to the project. A small stable feature gets a checklist. A complex, customer-facing flow earns a full test survey.</p>
+        </div>
+      </div>
+      <div class="flow-step" data-step="4">
+        <div class="flow-step-head">
+          <span class="flow-num">04</span>
+          <h5>Design before clicking</h5>
+        </div>
+        <div class="flow-desc">
+          <p>Equivalence classes and boundary values are chosen on paper first, so execution is deliberate instead of exploratory guesswork.</p>
+        </div>
+      </div>
+      <div class="flow-step" data-step="5">
+        <div class="flow-step-head">
+          <span class="flow-num">05</span>
+          <h5>Execute, element by element</h5>
+        </div>
+        <div class="flow-desc">
+          <p>Every interactive element gets its own pass. Broad sweeps miss things that individual attention catches.</p>
+        </div>
+      </div>
+      <div class="flow-step" data-step="6">
+        <div class="flow-step-head">
+          <span class="flow-num">06</span>
+          <h5>Report, then verify</h5>
+        </div>
+        <div class="flow-desc">
+          <p>A defect isn't done at submission. Severity gets graded on impact, and the report gets checked against the spec one more time before it ships.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flow-controls">
+      <button class="flow-play" id="flowPlay" type="button">
+        <span class="flow-play-icon">▶</span> Walk through the pass
+      </button>
+      <p class="flow-hint" id="flowHint">Hover a tile, or press play.</p>
+    </div>
+
+    <!-- principles -->
+    <h4 class="strategy-subhead">How I Decide Things</h4>
+    <div class="principle-grid" id="principleGrid">
+      <div class="principle-card">
+        <span class="principle-tag functional">Functional</span>
+        <h5>Is this in scope?</h5>
+        <p>I check the spec and verify with a business analyst before logging anything I can't yet prove is a defect rather than intended behavior. Stub buttons and by-design quirks get confirmed, not assumed.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-tag functional">Functional</span>
+        <h5>What's the actual severity?</h5>
+        <p>I grade impact on function and experience, never urgency. A broken core flow outranks a cosmetic flaw regardless of how visible either one is.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-tag gui">GUI</span>
+        <h5>Is this one issue or several?</h5>
+        <p>Same defect across multiple places stays one report with the other locations noted. Different defects found in the same minute never get merged just because they were found together.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-tag gui">GUI</span>
+        <h5>What earns a screenshot vs. a video?</h5>
+        <p>A static, single-state issue gets a still image with the problem marked. Anything involving a transition or multi-step interaction gets a short recording instead.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-tag functional">Functional</span>
+        <h5>How many values actually need testing?</h5>
+        <p>Not every value, every class. I pick one representative input per equivalence class, then test hard at the boundaries, since that's where defects cluster.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-tag gui">GUI</span>
+        <h5>Does the wording hold up?</h5>
+        <p>If a title needs a hedge word to make sense, it isn't ready yet. Every claim in a report needs to be provable from what was directly observed.</p>
+      </div>
+    </div>
+
+    <!-- vague worked example -->
+    <h4 class="strategy-subhead">What This Looks Like in Practice</h4>
+    <div class="worked-example" id="workedExample">
+      <div class="worked-example-row" data-row="1">
+        <span class="we-label">Situation</span>
+        <p>During a structured pass through a checkout flow, the displayed order total and the amount actually charged on submission didn't match.</p>
+      </div>
+      <div class="worked-example-row" data-row="2">
+        <span class="we-label">Severity call</span>
+        <p>Graded as a high-impact functional defect. It touches a core transaction path and affects every user who completes that flow, not an edge case.</p>
+      </div>
+      <div class="worked-example-row" data-row="3">
+        <span class="we-label">Scope check</span>
+        <p>Verified against the specification first to confirm the displayed total was the source of truth, rather than assuming it without checking.</p>
+      </div>
+      <div class="worked-example-row" data-row="4">
+        <span class="we-label">What I didn't do</span>
+        <p>Set a priority, group it with an unrelated layout issue found minutes later, or describe it with language stronger than what was directly observed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASE FILES ===== -->
+  <section id="cases" class="section cases">
+    <p class="section-eyebrow">03 / Case Files</p>
+    <h3 class="section-title">Four applications, four kinds of practice.</h3>
+    <p class="section-sub">Application names and internal links are sanitized. The defect counts, severity calls, and documentation produced are real.</p>
+
+    <div class="case-tabs" id="caseTabs">
+      <button class="case-tab active" data-case="menu">Training App A</button>
+      <button class="case-tab" data-case="forkify">Training App B</button>
+      <button class="case-tab" data-case="photostudio">Training App C</button>
+      <button class="case-tab" data-case="burgershop">Training App D</button>
+    </div>
+
+    <div class="case-panels" id="casePanels">
+
+      <!-- APP A - spec-first lesson -->
+      <article class="case-panel active" data-case="menu">
+        <div class="case-head">
+          <div>
+            <span class="case-kicker">Group Mentorship Phase</span>
+            <h4>The Spec-First Lesson</h4>
+          </div>
+          <span class="case-badge">40 bugs filed</span>
+        </div>
+        <p class="case-desc">My first full testing pass on a small ordering application. I started testing before finishing the specification and missed defects that were sitting in plain text on a page I hadn't read yet.</p>
+
+        <div class="case-stats-row">
+          <div class="case-stat"><span class="case-stat-num">40</span><span class="case-stat-label">Defects logged</span></div>
+          <div class="case-stat"><span class="case-stat-num">Bug reports</span><span class="case-stat-label">Documentation level</span></div>
+          <div class="case-stat"><span class="case-stat-num">Functional</span><span class="case-stat-label">Primary test type</span></div>
+        </div>
+
+        <div class="case-compare">
+          <div class="compare-col before">
+            <span class="compare-label">What I missed by skipping the spec</span>
+            <ul>
+              <li>A required selection step in the ordering flow that wasn't present</li>
+              <li>An authentication step the spec called for that the build didn't have</li>
+              <li>A date-restriction rule that wasn't being enforced</li>
+              <li>A timestamp that should have come from the server rather than the local device</li>
+            </ul>
+          </div>
+          <div class="compare-col after">
+            <span class="compare-label">What changed in my process</span>
+            <ul>
+              <li>Full spec read, end to end, before opening the browser</li>
+              <li>Source code scanned for logic before runtime clicks</li>
+              <li>Every answer from a business analyst cross-checked against the code itself</li>
+              <li>Now standard on every task since</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- APP B - smoke + functional -->
+      <article class="case-panel" data-case="forkify">
+        <div class="case-head">
+          <div>
+            <span class="case-kicker">Group Mentorship Phase</span>
+            <h4>Smoke-First Functional Pass</h4>
+          </div>
+          <span class="case-badge">40 bugs filed</span>
+        </div>
+        <p class="case-desc">Smoke test first to confirm the build was stable enough to test, then a full functional pass across search, a detail view, a save and bookmark feature, and a quantity-adjustment control.</p>
+
+        <div class="case-stats-row">
+          <div class="case-stat"><span class="case-stat-num">40</span><span class="case-stat-label">Defects logged</span></div>
+          <div class="case-stat"><span class="case-stat-num">Bug reports</span><span class="case-stat-label">Documentation level</span></div>
+          <div class="case-stat"><span class="case-stat-num">Functional + GUI</span><span class="case-stat-label">Primary test type</span></div>
+        </div>
+
+        <div class="bug-sample">
+          <div class="bug-sample-head">
+            <span class="anno-tag major">Major</span>
+            <span class="anno-id">Category: Functional</span>
+          </div>
+          <p class="bug-sample-title">A quantity control allowed its value to go negative instead of stopping at its lower limit.</p>
+          <div class="bug-sample-grid">
+            <div><span class="bug-field-label">What I did</span><p>Decremented the control repeatedly past its expected floor value.</p></div>
+            <div><span class="bug-field-label">Expected</span><p>The control should stop decrementing once it reaches its minimum valid value.</p></div>
+          </div>
+          <p class="bug-sample-actual">Observed: the value continued past zero into negative numbers, and dependent quantities recalculated incorrectly as a result.</p>
+        </div>
+      </article>
+
+      <!-- APP C - module naming discipline -->
+      <article class="case-panel" data-case="photostudio">
+        <div class="case-head">
+          <div>
+            <span class="case-kicker">Group Mentorship Phase</span>
+            <h4>Multi-Page Booking Flow</h4>
+          </div>
+          <span class="case-badge">57 bugs filed</span>
+        </div>
+        <p class="case-desc">A multi-page booking flow taught me the value of precise module naming. Sub-pages need their own naming convention or bugs become impossible to triage at scale.</p>
+
+        <div class="case-stats-row">
+          <div class="case-stat"><span class="case-stat-num">57</span><span class="case-stat-label">Defects logged</span></div>
+          <div class="case-stat"><span class="case-stat-num">Bug reports</span><span class="case-stat-label">Documentation level</span></div>
+          <div class="case-stat"><span class="case-stat-num">GUI + Functional</span><span class="case-stat-label">Primary test type</span></div>
+        </div>
+
+        <div class="bug-sample">
+          <div class="bug-sample-head">
+            <span class="anno-tag minor">Minor</span>
+            <span class="anno-id">Category: GUI</span>
+          </div>
+          <p class="bug-sample-title">A confirmation indicator did not appear after a multi-step booking form was submitted successfully.</p>
+          <div class="bug-sample-grid">
+            <div><span class="bug-field-label">What I did</span><p>Completed a booking sub-flow through to final submission.</p></div>
+            <div><span class="bug-field-label">Expected</span><p>A clear confirmation should appear to let the user know the submission succeeded.</p></div>
+          </div>
+          <p class="bug-sample-actual">Observed: no confirmation indicator appeared, leaving the outcome of the submission ambiguous to the user.</p>
+        </div>
+      </article>
+
+      <!-- APP D - full documentation suite -->
+      <article class="case-panel" data-case="burgershop">
+        <div class="case-head">
+          <div>
+            <span class="case-kicker">One to One Mentorship Phase</span>
+            <h4>Multi-Environment Ordering Application</h4>
+          </div>
+          <span class="case-badge">Full documentation suite</span>
+        </div>
+        <p class="case-desc">My most complete deliverable: full functional testing across multiple product categories, a cart and checkout flow, and a secondary planning calculator, backed by a complete documentation set rather than just a bug list.</p>
+
+        <div class="case-stats-row">
+          <div class="case-stat"><span class="case-stat-num">Bugs +</span><span class="case-stat-label">Acceptance Sheet</span></div>
+          <div class="case-stat"><span class="case-stat-num">Test Survey</span><span class="case-stat-label">BVA + Equivalence Partitioning</span></div>
+          <div class="case-stat"><span class="case-stat-num">Quality</span><span class="case-stat-label">Report + Cover Letter</span></div>
+        </div>
+
+        <div class="bug-sample">
+          <div class="bug-sample-head">
+            <span class="anno-tag critical">Critical</span>
+            <span class="anno-id">Category: Content / Functional</span>
+          </div>
+          <p class="bug-sample-title">A product's displayed name and its description did not match, presenting an entirely different item's content.</p>
+          <div class="bug-sample-grid">
+            <div><span class="bug-field-label">What I did</span><p>Reviewed a product listing page against its individual item details.</p></div>
+            <div><span class="bug-field-label">Expected</span><p>The description shown should match the product it's attached to.</p></div>
+          </div>
+          <p class="bug-sample-actual">Observed: the listed item displayed description text belonging to a different product entirely.</p>
+        </div>
+
+        <div class="doc-chips">
+          <span class="doc-chip">Acceptance Sheet</span>
+          <span class="doc-chip">Test Survey: BVA + Equivalence Partitioning</span>
+          <span class="doc-chip">Quality Report</span>
+          <span class="doc-chip">Cover Letter</span>
+        </div>
+
+        <div class="lesson-strip">
+          <span class="lesson-strip-label">Retrospective note from this task</span>
+          <p>I once grouped two unrelated defects into a single report because they were found minutes apart during the same pass. Now: unrelated issues are always separate tickets, regardless of when they were found.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== TOOLKIT ===== -->
+  <section id="toolkit" class="section toolkit">
+    <p class="section-eyebrow">04 / Toolkit</p>
+    <h3 class="section-title">What I actually used.</h3>
+
+    <div class="toolkit-grid">
+      <div class="toolkit-item">
+        <span class="toolkit-name">Jira</span>
+        <span class="toolkit-use">Bug tracking and lifecycle</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-name">Fiddler Classic</span>
+        <span class="toolkit-use">Desktop traffic capture</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-name">Charles Proxy</span>
+        <span class="toolkit-use">Mobile traffic capture</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-name">Chrome DevTools</span>
+        <span class="toolkit-use">DOM and console inspection</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-name">Android Studio + ADB</span>
+        <span class="toolkit-use">Mobile log collection</span>
+      </div>
+      <div class="toolkit-item">
+        <span class="toolkit-name">BVA & Equivalence Partitioning</span>
+        <span class="toolkit-use">Test design technique</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <p class="section-eyebrow">05 / Contact</p>
+    <h3 class="section-title">Let's talk about quality.</h3>
+    <p class="contact-sub">Open to QA roles, internships, and conversations with people who think carefully about bug reports.</p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/reefah-tasnia-haque-3652ab270" target="_blank" rel="noopener" class="contact-link">LinkedIn <span class="arrow">→</span></a>
+      <a href="mailto:tasniareefah@gmail.com" class="contact-link">Email <span class="arrow">→</span></a>
+      <a href="https://reefahtasnia.vercel.app" target="_blank" rel="noopener" class="contact-link">More of my work in Portfolio <span class="arrow">→</span></a>
+    </div>
+    <p class="contact-footnote">Internal system links and account details have been omitted from this portfolio.</p>
+  </section>
+
+  <footer class="footer">
+    <p>Built by Reefah Tasnia Haque · Filed under: <span class="footer-tag">Honest Work</span></p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
